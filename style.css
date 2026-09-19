@@ -291,7 +291,14 @@ h1, h2, h3 {
 }
 .hero-portrait:hover .frame { transform: rotate(0deg); }
 .hero-portrait:hover .frame:nth-child(2) { transform: rotate(0deg); opacity: 0.6; }
-
+.hero-portrait .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;   /* adjust to frame your face */
+  border-radius: 50%;
+  display: block;
+}
 .hero-portrait .photo {
   width: 78%;
   aspect-ratio: 1;
